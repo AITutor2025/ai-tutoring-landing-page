@@ -1,40 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>AI Tutoring Platform</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enhanced_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Personalized AI Tutoring That Adapts to Every Student</h1>
-        <p>24/7 smart tutoring tailored to your child’s learning style, pace, and goals.</p>
-        <button onclick="getStarted()">Get Started Free</button>
-        <button onclick="watchDemo()">Watch Demo</button>
+    <header class="hero">
+        <div class="container">
+            <h1>Personalized AI Tutoring That Adapts to Every Student</h1>
+            <p>24/7 smart tutoring tailored to your child’s learning style, pace, and goals.</p>
+            <div class="cta-buttons">
+                <button onclick="alert('Redirecting to sign-up page...')">Get Started Free</button>
+                <button onclick="alert('Playing demo video...')">Watch Demo</button>
+            </div>
+        </div>
     </header>
 
-    <section id="how-it-works">
+    <section class="how-it-works">
         <h2>How It Works</h2>
-        <ol>
-            <li>Sign up and set learning goals</li>
-            <li>Get matched with your AI tutor</li>
-            <li>Learn, practice, and track progress</li>
-        </ol>
+        <div class="steps">
+            <div class="step">
+                <i class="fas fa-user-plus"></i>
+                <p>Sign up and set learning goals</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-robot"></i>
+                <p>Get matched with your AI tutor</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-chart-line"></i>
+                <p>Learn, practice, and track progress</p>
+            </div>
+        </div>
     </section>
 
-    <section id="features">
+    <section class="features">
         <h2>Key Features</h2>
         <ul>
-            <li>AI-Powered Personalized Learning</li>
-            <li>Real-Time Feedback & Progress Tracking</li>
-            <li>Interactive Lessons & Quizzes</li>
-            <li>Parent & Teacher Dashboards</li>
-            <li>Available Anytime, Anywhere</li>
+            <li><i class="fas fa-brain"></i> AI-Powered Personalized Learning</li>
+            <li><i class="fas fa-sync-alt"></i> Real-Time Feedback & Progress Tracking</li>
+            <li><i class="fas fa-book-open"></i> Interactive Lessons & Quizzes</li>
+            <li><i class="fas fa-users"></i> Parent & Teacher Dashboards</li>
+            <li><i class="fas fa-globe"></i> Available Anytime, Anywhere</li>
         </ul>
     </section>
 
-    <section id="faq">
+    <section class="testimonials">
+        <h2>What Parents & Students Say</h2>
+        <div class="testimonial">
+            <p>"This platform transformed my son's math skills in just a few weeks!"</p>
+            <span>- Sarah, Parent of 7th Grader</span>
+        </div>
+        <div class="testimonial">
+            <p>"I love how the AI tutor explains things in a way I understand."</p>
+            <span>- Jason, 9th Grade Student</span>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Free</h3>
+                <p>Access to basic lessons and quizzes</p>
+                <p>$0/month</p>
+            </div>
+            <div class="card">
+                <h3>Premium</h3>
+                <p>Full access, personalized reports, live support</p>
+                <p>$19.99/month</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
         <h2>FAQ</h2>
         <div class="faq-item">
             <h3 onclick="toggleAnswer(this)">Is this safe for kids?</h3>
@@ -54,16 +96,11 @@
         <p>&copy; 2025 AI Tutoring Platform</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
